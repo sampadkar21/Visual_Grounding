@@ -121,5 +121,44 @@ if cropped_object:
     image_with_box.show()
     cropped_object.show()
 ```
+**Demo**
 
-### Demo Example
+### Future Directions
+While the current model performs well, there are several avenues for future improvement:
+- Contrastive Loss: Implement a contrastive loss function (e.g., CLIP-style loss) in addition to the bounding box regression loss. This would encourage the model to learn a more aligned joint embedding space, pushing corresponding image regions and text descriptions closer together and improving overall grounding accuracy.
+- Expanded Datasets: Augment the training data with more diverse and challenging datasets beyond RefCOCO. Incorporating images from different domains (e.g., medical, satellite, artistic) could significantly enhance the model's generalization capabilities and make it more robust to out-of-distribution examples.
+
+### Citations & Acknowledgements
+This project was made possible by leveraging several incredible open-source models and datasets.
+
+**DINOv3 Model**:
+```bibtex
+@article{li2024dinov3,
+  title={DINOv3: A General-Purpose Visual Encoder with Controllable Saliency},
+  author={Li, Bowen and Fan, Hao and Clark, Jonathan and Torresani, Lorenzo},
+  journal={arXiv preprint arXiv:2407.16347},
+  year={2024}
+}
+```
+**BGE Model**: 
+```bibtex
+@misc{bge_embedding,
+      title={C-Pack: Packaged Resources To Advance General Chinese Embedding}, 
+      author={Shitao Xiao and Zheng Liu and Peitian Zhang and Niklas Muennighoff},
+      year={2023},
+      eprint={2309.07597},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+**RefCOCO Dataset**:
+```bibtex
+@inproceedings{yu2016modeling,
+  title={Modeling context in referring expressions},
+  author={Yu, Licheng and Poirson, Patrick and Yang, Shan and Berg, Alexander C and Berg, Tamara L},
+  booktitle={European conference on computer vision},
+  pages={69--85},
+  year={2016},
+  organization={Springer}
+}
+```
