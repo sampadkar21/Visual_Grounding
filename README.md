@@ -56,7 +56,7 @@ After processing sentences, the final sample counts were:
 
 ## Training & Evaluation
 
-The model was trained for 10 epochs using the AdamW optimizer and a cosine learning rate scheduler. The loss was calculated using the distance_box_iou_loss.
+The model was trained for 10 epochs using the AdamW optimizer and a cosine learning rate scheduler. The loss was calculated using the distance_box_iou_loss. The training code is present in the [.ipynb file](Visual_Grounding/visual-grounding.ipynb)
 
 **Training Results**:
 ```table
