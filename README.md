@@ -23,7 +23,7 @@ The model is composed of three main parts:
 - **Total Parameters:** 144,968,836  
 - **Trainable Parameters:** 25,948,420
 
-**[Download the Model Weights From Here](https://filebin.net/43917s8c0u3uw0ak)
+**[Download the Model Weights From Here](https://filebin.net/43917s8c0u3uw0ak)**
 
 ## Dataset
 The model was trained on the RefCOCO dataset, a standard benchmark for referential expression grounding. The dataset was loaded using the Hugging Face `datasets` library.
