@@ -138,7 +138,6 @@ While the current model performs well, there are several avenues for future impr
 ## Citations & Acknowledgements
 This project was made possible by leveraging several incredible open-source models and datasets.
 
-**DINOv3 Model**:
 ```bibtex
 @article{li2024dinov3,
   title={DINOv3: A General-Purpose Visual Encoder with Controllable Saliency},
@@ -147,7 +146,6 @@ This project was made possible by leveraging several incredible open-source mode
   year={2024}
 }
 ```
-**BGE Model**: 
 ```bibtex
 @misc{bge_embedding,
       title={C-Pack: Packaged Resources To Advance General Chinese Embedding}, 
@@ -158,7 +156,16 @@ This project was made possible by leveraging several incredible open-source mode
       primaryClass={cs.CL}
 }
 ```
-**RefCOCO Dataset**:
+```bibtex
+@misc{liu2023grounding,
+      title={Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection}, 
+      author={Shilong Liu and Zhaoyang Zeng and Tianhe Ren and Feng Li and Hao Zhang and Jie Yang and Chunyuan Li and Jianwei Yang and Hang Su and Jun Zhu and Lei Zhang},
+      year={2023},
+      eprint={2303.05499},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 ```bibtex
 @inproceedings{yu2016modeling,
   title={Modeling context in referring expressions},
