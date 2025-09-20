@@ -17,7 +17,7 @@ The model is composed of three main parts:
   - A 6-layer Transformer Decoder takes the text embeddings as the query (`tgt`) and the image embeddings as the memory (`memory`) to fuse the information.
   - The output from the decoder is passed through a final MLP head to predict the four bounding box coordinates (`xmin`, `ymin`, `xmax`, `ymax`).
  
-![img](images/Visual_Grounding_Model_Architecture.png)
+![img](images/Visual_Grounding Model Architecture.png)
 
 ### Model Summary
 - **Total Parameters:** 144,968,836  
