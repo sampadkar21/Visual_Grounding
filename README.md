@@ -23,6 +23,8 @@ The model is composed of three main parts:
 - **Total Parameters:** 144,968,836  
 - **Trainable Parameters:** 25,948,420
 
+**[Download the Model Weights From Here](https://filebin.net/43917s8c0u3uw0ak)
+
 ## Dataset
 The model was trained on the RefCOCO dataset, a standard benchmark for referential expression grounding. The dataset was loaded using the Hugging Face `datasets` library.
 
@@ -52,7 +54,7 @@ After processing sentences, the final sample counts were:
 - Validation Samples: 10,834
 - Test Samples: 10,752
 
-### Training & Evaluation
+## Training & Evaluation
 
 The model was trained for 10 epochs using the AdamW optimizer and a cosine learning rate scheduler. The loss was calculated using the distance_box_iou_loss.
 
@@ -71,13 +73,13 @@ The model was trained for 10 epochs using the AdamW optimizer and a cosine learn
 | 9     | 0.3509     | 0.6696    | 0.4065   | 0.6197  |
 | 10    | 0.3440     | 0.6759    | 0.4056   | 0.6205  |
 ```
-### Final Test Results:
+## Final Test Results:
 - Mean IoU (mIoU): 0.6196
 - Mean Average Precision (MAP):
   - mAP@50: 0.5746
   - mAP@75: 0.2173
 
-### Inference & Demo
+## Inference & Demo
 To use the trained model, load the state dictionary and use the predict_and_crop function provided in the notebook.
 
 **Requirements**:
@@ -128,12 +130,12 @@ if cropped_object:
 ![img](images/out2.png)
 ![img](images/out3.png)
 
-### Future Directions
+## Future Directions
 While the current model performs well, there are several avenues for future improvement:
 - Contrastive Loss: Implement a contrastive loss function (e.g., CLIP-style loss) in addition to the bounding box regression loss. This would encourage the model to learn a more aligned joint embedding space, pushing corresponding image regions and text descriptions closer together and improving overall grounding accuracy.
 - Expanded Datasets: Augment the training data with more diverse and challenging datasets beyond RefCOCO. Incorporating images from different domains (e.g., medical, satellite, artistic) could significantly enhance the model's generalization capabilities and make it more robust to out-of-distribution examples.
 
-### Citations & Acknowledgements
+## Citations & Acknowledgements
 This project was made possible by leveraging several incredible open-source models and datasets.
 
 **DINOv3 Model**:
