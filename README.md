@@ -10,13 +10,14 @@ This repository contains the implementation of a Visual Grounding model that can
 
 ## Model Architecture
 The model is composed of three main parts:
-
 - **Vision Encoder:** A frozen `facebook/dinov3-vitb16-pretrain-lvd1689m` model processes the input image to extract rich visual features.
 - **Text Encoder:** A frozen `BAAI/bge-small-en-v1.5` model processes the text prompt to generate contextual text embeddings.
 - **Fusion and Prediction:**
   - Linear projection layers align the dimensions of the image and text embeddings.
   - A 6-layer Transformer Decoder takes the text embeddings as the query (`tgt`) and the image embeddings as the memory (`memory`) to fuse the information.
   - The output from the decoder is passed through a final MLP head to predict the four bounding box coordinates (`xmin`, `ymin`, `xmax`, `ymax`).
+ 
+![img](images/Visual_Grounding_Model_Architecture.png)
 
 ### Model Summary
 - **Total Parameters:** 144,968,836  
@@ -122,6 +123,10 @@ if cropped_object:
     cropped_object.show()
 ```
 **Demo**
+![img](images/out4.png)
+![img](images/out1.png)
+![img](images/out2.png)
+![img](images/out3.png)
 
 ### Future Directions
 While the current model performs well, there are several avenues for future improvement:
