@@ -56,7 +56,7 @@ After processing sentences, the final sample counts were:
 The model was trained for 10 epochs using the AdamW optimizer and a cosine learning rate scheduler. The loss was calculated using the distance_box_iou_loss.
 
 **Training Results**:
-
+```table
 Epoch	Train Loss	Train IoU	Val Loss	Val IoU
 1	0.6769	0.3658	0.6040	0.4308
 2	0.5558	0.4791	0.5361	0.4991
@@ -68,7 +68,7 @@ Epoch	Train Loss	Train IoU	Val Loss	Val IoU
 8	0.3655	0.6562	0.4093	0.6174
 9	0.3509	0.6696	0.4065	0.6197
 10	0.3440	0.6759	0.4056	0.6205
-
+```
 ### Final Test Results:
 - Mean IoU (mIoU): 0.6196
 - Mean Average Precision (MAP):
